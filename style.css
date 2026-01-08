@@ -1,9 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 body{
 
-  --font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .container{
-    width: 71%;
+    width: 75%;
     max-width: 1346px;
     margin: 0 auto;
 }
+.primary-btn{
+     color:#FFFFFF;
+    font-weight:600 ;
+    font-size: 16px;
+    padding: 13px 16px;
+    border: none;
+    background-color: #469165;
+    border-radius: 4px;
+    cursor: pointer;
+ border: 1px solid #469165 ;
+    transition: .5s;
+}
+.btn {
+      color:#FFFFFF;
+    font-weight:600 ;
+    font-size: 16px;
+    padding: 13px 16px;
+    border: none;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF ;
+}
+.primary-btn:hover{
+ color: #469165; 
+ background-color: #fff;
+ border: 1px solid #469165 ;
+}
+
+/* ---------------------------- NAVBAR SECTION START */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 0;
+}
+.navbar .logo{
+max-width: 139px;
+}
+.manu ul{
+    display: flex;
+    gap: 32px;
+}
+.manu ul li a{
+    color:#000000;
+    font-weight:500 ;
+    font-size: 16px;
+}
+
+/* ---------------------------- NAVBAR SECTION END */
+
+
+/* -----------------------------BANNER SECTION START */
+#banner{
+    background-image: url(./assets/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 674px;
+}
+#banner .container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+text-align:center;
+}
+#banner .banner a{
+    background-color: #fff;
+    padding: 8px 12px;
+    display: inline-block;
+    border-radius: 100px;
+    color:#469165 ;
+    font-weight: 500;
+    font-size:16px ;
+}
+#banner .banner a img{
+    margin-right: 3px;
+    width: 16px;
+   vertical-align: middle;
+}
+#banner .banner h1{
+    color:#FFFFFF ;
+    font-weight: bold;
+    padding: 16px 0;
+    text-transform: capitalize;
+}
+#banner .banner h1 span{
+        color:#30B868;
+
+}
+#banner .banner p{
+    color:#FFFFFF ;
+    font-weight: 400;
+    padding: 0 185px;
+    font-size: 18px;
+}
+.link-btn{
+    text-align: center;
+    margin-top: 32px;
+}
+#banner .primary-btn  {
+    display: flex;  
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+#banner .primary-btn img,
+.btn img{
+    vertical-align: middle;
+}
+/* -----------------------------BANNER SECTION END */
